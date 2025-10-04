@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshit Sinha | Full Stack Developer & Android Expert</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader-wrapper">
+    <div class="loader">
+      <svg class="loader-svg" width="80" height="80" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          .spinner_9y7u{animation:spinner_fUkk 2.4s linear infinite;animation-delay:-2.4s;fill:#6366f1}
+          .spinner_DF2s{animation-delay:-1.6s;fill:#8b5cf6}
+          .spinner_q27e{animation-delay:-.8s;fill:#a78bfa}
+          @keyframes spinner_fUkk{8.33%{x:13px;y:1px}25%{x:13px;y:1px}33.3%{x:13px;y:13px}50%{x:13px;y:13px}58.33%{x:1px;y:13px}75%{x:1px;y:13px}83.33%{x:1px;y:1px}}
+        </style>
+        <rect class="spinner_9y7u" x="1" y="1" rx="1" width="10" height="10"/>
+        <rect class="spinner_9y7u spinner_DF2s" x="1" y="1" rx="1" width="10" height="10"/>
+        <rect class="spinner_9y7u spinner_q27e" x="1" y="1" rx="1" width="10" height="10"/>
+      </svg>
+      <div class="loader-text">
+        <h2 class="gradient-text">Loading Portfolio</h2>
+        <div class="loader-progress">
+          <div class="loader-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <a href="#top" class="scroll-to-top" aria-label="Scroll to top">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <header id="top">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="nav-shield-wrapper">
+            <i class="fa fa-shield shield-logo" aria-hidden="true"></i>
+          </div>
+          <h1>Harshit Sinha</h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#freelance">Freelance</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Available for Freelance</div>
+          <h2 class="hero-title">Hi, I'm <span class="gradient-text">Harshit Sinha</span></h2>
+          <p class="hero-tagline">Full Stack Developer | Cybersecurity Enthusiast | Android ROM Expert | Open Source Lead Maintainer</p>
+          <p class="hero-description">
+            Specializing in Android development, firmware solutions, cybersecurity, and cross-platform tools.
+            <br>Lead Maintainer of <a href="https://github.com/spike0en/nothing_archive" target="_blank" class="inline-link">Nothing Archive</a> | Transforming complex technical challenges into elegant solutions.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-badge">
+              <span class="stat-number">229+</span>
+              <span class="stat-label">Contributions</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-number">92+</span>
+              <span class="stat-label">Repositories</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-number">71+</span>
+              <span class="stat-label">GitHub Stars</span>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Hire Me</span>
+            </a>
+            <a href="https://github.com/PHATWalrus" target="_blank" class="btn btn-outline">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <img src="https://avatars.githubusercontent.com/u/76208242?v=4" alt="Harshit Sinha" class="profile-photo">
+            <div class="profile-glow"></div>
+            <div class="profile-info">
+              <h3>Harshit Sinha</h3>
+              <p class="role">Full Stack Developer</p>
+              <div class="profile-details">
+                <div class="detail-item">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span>India</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                  <span>3+ Years Experience</span>
+                </div>
+                <div class="detail-item">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  <span>Android & Web Expert</span>
+                </div>
+                <div class="detail-item status-online">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+                  <span>Available for Hire</span>
+                </div>
+              </div>
+              <div class="profile-social">
+                <a href="https://github.com/PHATWalrus" target="_blank" aria-label="GitHub" title="GitHub">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/harshit-sinha" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:harshit@example.com" aria-label="Email" title="Email">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/harshitsinha" target="_blank" aria-label="Twitter" title="Twitter">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get To Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="about-intro">
+            👋 Hello! I'm <strong>Harshit Sinha</strong>, a passionate full-stack developer, cybersecurity enthusiast, and Android expert with a proven track record in creating innovative solutions for complex technical challenges.
+          </p>
+          
+          <p>
+            🚀 With <strong>229+ contributions</strong> across <strong>92+ repositories</strong>, I specialize in Android ROM development, firmware flashing tools, system-level programming, cybersecurity, and full-stack web development. My work bridges the gap between hardware and software, delivering robust solutions that empower users and developers alike.
+          </p>
+          
+          <p>
+            🛡️ <strong>Cybersecurity & Open Source Leadership:</strong> As one of the lead maintainers and core contributors of <a href="https://github.com/spike0en/nothing_archive" target="_blank" class="project-link"><strong>Nothing Archive</strong></a>, I'm deeply involved in the open-source community. My passion for cybersecurity drives me to build secure, reliable solutions and contribute to projects that prioritize user privacy and data protection.
+          </p>
+          
+          <div class="highlight-box">
+            <h3><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Areas of Expertise</h3>
+            <ul class="expertise-list">
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Android ROM Development & Custom Recovery (TWRP)
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Firmware Flashing Tools (Qualcomm & MediaTek)
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Full Stack Web Development (PHP, Java, Python)
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Cybersecurity & Secure Application Development
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Cross-Platform Automation & System Tools
+              </li>
+              <li>
+                <i class="fa fa-check" aria-hidden="true"></i>
+                Open Source Leadership & Community Building
+              </li>
+            </ul>
+          </div>
+          
+          <p>
+            🎯 My flagship project, <strong>universal-flasher</strong> (71+ ⭐), is an advanced cross-platform tool that simplifies firmware flashing for Android devices across multiple platforms. I've also contributed to major Android development communities including XDA Developers.
+          </p>
+          
+          <p>
+            ⛓️‍💥 <strong>Freelance Developer:</strong> I offer professional services in Android development, web development, automation tools, and custom software solutions. Let's bring your ideas to life!
+          </p>
+        </div>
+        
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="card-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+            <h3>Education & Learning</h3>
+            <p>Continuously expanding knowledge in cutting-edge technologies, cybersecurity, and best practices in software development.</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="card-icon"><i class="fa fa-shield" aria-hidden="true"></i></div>
+            <h3>Cybersecurity Focus</h3>
+            <p>Passionate about building secure applications, protecting user privacy, and implementing industry-standard security practices.</p>
+          </div>
+          
+          <div class="info-card">
+            <div class="card-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+            <h3>Community Leadership</h3>
+            <p>Lead Maintainer of Nothing Archive and active contributor to open-source projects with recognition from the XDA Developers community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">My Arsenal</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-description">A comprehensive toolkit for building innovative solutions</p>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-code" aria-hidden="true"></i>
+          </div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag python">Python</span>
+            <span class="skill-tag java">Java</span>
+            <span class="skill-tag c">C</span>
+            <span class="skill-tag php">PHP</span>
+            <span class="skill-tag shell">Shell/Bash</span>
+            <span class="skill-tag web">HTML/CSS/JS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-android" aria-hidden="true"></i>
+          </div>
+          <h3>Android Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag android">Android SDK</span>
+            <span class="skill-tag android">ROM Development</span>
+            <span class="skill-tag android">TWRP</span>
+            <span class="skill-tag android">Fastboot/ADB</span>
+            <span class="skill-tag android">Kernel Development</span>
+            <span class="skill-tag android">Device Trees</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag web">Full Stack Development</span>
+            <span class="skill-tag web">Backend (PHP)</span>
+            <span class="skill-tag web">Frontend Design</span>
+            <span class="skill-tag web">RESTful APIs</span>
+            <span class="skill-tag web">Database Management</span>
+            <span class="skill-tag web">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+          </div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tool">Git & GitHub</span>
+            <span class="skill-tag tool">Linux/Unix</span>
+            <span class="skill-tag tool">Build Systems</span>
+            <span class="skill-tag tool">Cross-Platform Dev</span>
+            <span class="skill-tag tool">CI/CD</span>
+            <span class="skill-tag tool">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-microchip" aria-hidden="true"></i>
+          </div>
+          <h3>Firmware & System</h3>
+          <div class="skill-tags">
+            <span class="skill-tag firmware">Firmware Flashing</span>
+            <span class="skill-tag firmware">Qualcomm Tools</span>
+            <span class="skill-tag firmware">MediaTek Tools</span>
+            <span class="skill-tag firmware">System Automation</span>
+            <span class="skill-tag firmware">Driver Development</span>
+            <span class="skill-tag firmware">Bootloader</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-shield" aria-hidden="true"></i>
+          </div>
+          <h3>Cybersecurity</h3>
+          <div class="skill-tags">
+            <span class="skill-tag security">Security Analysis</span>
+            <span class="skill-tag security">Secure Coding</span>
+            <span class="skill-tag security">Privacy Protection</span>
+            <span class="skill-tag security">Vulnerability Assessment</span>
+            <span class="skill-tag security">Data Encryption</span>
+            <span class="skill-tag security">Security Best Practices</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fa fa-users" aria-hidden="true"></i>
+          </div>
+          <h3>Professional Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag prof">Freelancing</span>
+            <span class="skill-tag prof">Project Management</span>
+            <span class="skill-tag prof">Problem Solving</span>
+            <span class="skill-tag prof">Technical Writing</span>
+            <span class="skill-tag prof">Code Review</span>
+            <span class="skill-tag prof">Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">Innovative solutions that make a real impact</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Featured Project 1 - Universal Flasher -->
+        <div class="project-card featured">
+          <div class="project-badge-corner">⭐ Featured</div>
+          <div class="project-image-header">
+            <div class="project-icon">🔧</div>
+            <div class="project-glow"></div>
+          </div>
+          <div class="project-content">
+            <h3>Universal Android Flasher</h3>
+            <p class="project-description">
+              Advanced cross-platform firmware flashing tool that simplifies ROM installation for Android devices. Supports Qualcomm (EDL/Fastboot) and MediaTek platforms with automated detection and streamlined workflows.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight">✨ 71+ GitHub Stars</span>
+              <span class="highlight">🔄 Cross-Platform Support</span>
+              <span class="highlight">⚡ Automated Workflows</span>
+            </div>
+            <div class="project-stats-row">
+              <div class="stat-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <span>71 Stars</span>
+              </div>
+              <div class="stat-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16l-4-4-4 4M12 12v9"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                <span>4 Forks</span>
+              </div>
+              <div class="stat-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Active</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech">Python</span>
+              <span class="tech">Android SDK</span>
+              <span class="tech">CLI</span>
+              <span class="tech">Automation</span>
+            </div>
+            <a href="https://github.com/PHATWalrus/universal-flasher" target="_blank" class="project-link-btn">
+              <span>View on GitHub</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 - XDA TWRP Recovery -->
+        <div class="project-card">
+          <div class="project-image-header">
+            <div class="project-icon">📱</div>
+          </div>
+          <div class="project-content">
+            <div class="xda-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+              </svg>
+              XDA Featured
+            </div>
+            <h3>OrangeFox Recovery Projects</h3>
+            <p class="project-description">
+              Multiple TWRP recovery implementations for OrangeFox devices. Official and unofficial builds featured on XDA Developers with community recognition.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight">🏆 XDA Developer Status</span>
+              <span class="highlight">📦 Multiple Device Support</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech">TWRP</span>
+              <span class="tech">Android</span>
+              <span class="tech">Recovery</span>
+              <span class="tech">Makefile</span>
+            </div>
+            <a href="https://xdaforums.com/m/phatwalrus.12377719/" target="_blank" class="project-link-btn secondary">
+              <span>View XDA Profile</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 - Nothing Phone TWRP -->
+        <div class="project-card">
+          <div class="project-image-header">
+            <div class="project-icon">⚡</div>
+          </div>
+          <div class="project-content">
+            <h3>Nothing Phone Development</h3>
+            <p class="project-description">
+              Custom TWRP recovery and fastboot flasher tools for Nothing Phone (Pong). Enables advanced modifications, custom ROM installation, and comprehensive backup solutions.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight">🔥 Community Favorite</span>
+              <span class="highlight">🛠️ Complete Toolset</span>
+            </div>
+            <div class="project-stats-row">
+              <div class="stat-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <span>30+ Stars</span>
+              </div>
+              <div class="stat-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 16l-4-4-4 4M12 12v9"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg>
+                <span>15 Forks</span>
+              </div>
+            </div>
+            <div class="tech-stack">
+              <span class="tech">TWRP</span>
+              <span class="tech">Shell</span>
+              <span class="tech">Fastboot</span>
+            </div>
+            <a href="https://github.com/PHATWalrus/device_nothing_pong-TWRP" target="_blank" class="project-link-btn secondary">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 - Driver Monitor -->
+        <div class="project-card">
+          <div class="project-image-header">
+            <div class="project-icon">🚗</div>
+          </div>
+          <div class="project-content">
+            <h3>Advanced Driver Monitor</h3>
+            <p class="project-description">
+              AI-powered driver monitoring system with drowsiness detection, attention tracking, and real-time behavior analysis for enhanced vehicle safety.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight">🤖 AI/ML Powered</span>
+              <span class="highlight">📊 Real-time Analysis</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech">Python</span>
+              <span class="tech">OpenCV</span>
+              <span class="tech">TensorFlow</span>
+              <span class="tech">Computer Vision</span>
+            </div>
+            <a href="https://github.com/PHATWalrus/AdvanceDriverMonitor" target="_blank" class="project-link-btn secondary">
+              <span>View Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5 - XDA Contributions -->
+        <div class="project-card highlight">
+          <div class="project-image-header xda-header">
+            <div class="project-icon">🏆</div>
+          </div>
+          <div class="project-content">
+            <div class="xda-badge-large">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+              </svg>
+              XDA Developer Contributor
+            </div>
+            <h3>XDA Developer Contributions</h3>
+            <p class="project-description">
+              Recognized contributor to XDA Developers community with multiple recovery projects, ROM developments, and technical guides across various devices including OrangeFox and Nothing Phone.
+            </p>
+            <div class="xda-contributions">
+              <div class="contribution-item">
+                <div class="contribution-icon">📱</div>
+                <div class="contribution-details">
+                  <h4>TWRP Recovery Development</h4>
+                  <p>Official & unofficial TWRP builds for multiple devices</p>
+                </div>
+              </div>
+              <div class="contribution-item">
+                <div class="contribution-icon">🔧</div>
+                <div class="contribution-details">
+                  <h4>Firmware Tools</h4>
+                  <p>Flashing utilities and automation scripts</p>
+                </div>
+              </div>
+              <div class="contribution-item">
+                <div class="contribution-icon">📚</div>
+                <div class="contribution-details">
+                  <h4>Technical Documentation</h4>
+                  <p>Guides and tutorials for Android development</p>
+                </div>
+              </div>
+            </div>
+            <a href="https://xdaforums.com/search/member/?user_id=11666884" target="_blank" class="project-link-btn">
+              <span>Visit XDA Profile</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 6 - Web Development -->
+        <div class="project-card">
+          <div class="project-image-header">
+            <div class="project-icon">🌐</div>
+          </div>
+          <div class="project-content">
+            <h3>Full Stack Web Projects</h3>
+            <p class="project-description">
+              Professional web applications built with PHP, Java, and modern frameworks. E-commerce platforms, CMS solutions, and custom business applications.
+            </p>
+            <div class="project-highlights">
+              <span class="highlight">💼 Client Projects</span>
+              <span class="highlight">🎨 Custom Solutions</span>
+            </div>
+            <div class="tech-stack">
+              <span class="tech">PHP</span>
+              <span class="tech">Java</span>
+              <span class="tech">MySQL</span>
+              <span class="tech">JavaScript</span>
+              <span class="tech">React</span>
+            </div>
+            <a href="#contact" class="project-link-btn secondary">
+              <span>Discuss Your Project</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="freelance" class="freelance">
+    <div class="container">
+      <div class="freelance-content">
+        <div class="freelance-info">
+          <span class="section-badge">Work With Me</span>
+          <h2>Available for Freelance Projects</h2>
+          <p>
+            I offer professional development services specializing in Android development, web development, automation tools, and custom software solutions. Whether you need a custom Android ROM, a web application, or a specialized tool, I can help bring your vision to life.
+          </p>
+          <ul class="services-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Android Application Development
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Custom ROM & Recovery Development
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Full Stack Web Development (PHP, Java)
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Firmware Flashing Tools & Automation
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              Technical Consulting & Code Review
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">
+            <span>Let's Work Together</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="freelance-image">
+          <div class="freelance-card">
+            <h3>💼 Why Choose Me?</h3>
+            <div class="benefit-item">
+              <span class="benefit-number">01</span>
+              <div>
+                <h4>Proven Expertise</h4>
+                <p>229+ contributions, 71+ stars, recognized by XDA community</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-number">02</span>
+              <div>
+                <h4>Quality Delivery</h4>
+                <p>Clean code, thorough testing, and comprehensive documentation</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <span class="benefit-number">03</span>
+              <div>
+                <h4>Timely Communication</h4>
+                <p>Regular updates and transparent project management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activities" class="activities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Learning Journey</span>
+        <h2 class="section-title">Development Activities</h2>
+        <p class="section-description">Hands-on projects and learning exercises</p>
+      </div>
+      
+      <div class="activities-grid">
+        <a href="index1.html" class="activity-card">
+          <div class="activity-number">01</div>
+          <h3>First Webpage</h3>
+          <p>Introduction to HTML structure</p>
+        </a>
+
+        <a href="index2.html" class="activity-card">
+          <div class="activity-number">02</div>
+          <h3>Contact Form</h3>
+          <p>Form design and validation</p>
+        </a>
+
+        <a href="index3.html" class="activity-card">
+          <div class="activity-number">03</div>
+          <h3>Weekend Planner</h3>
+          <p>List management with HTML</p>
+        </a>
+
+        <a href="index4.html" class="activity-card">
+          <div class="activity-number">04</div>
+          <h3>Movie Collection</h3>
+          <p>Table structures and data</p>
+        </a>
+
+        <a href="index5.html" class="activity-card">
+          <div class="activity-number">05</div>
+          <h3>About Me Page</h3>
+          <p>Personal profile design</p>
+        </a>
+
+        <a href="index6.html" class="activity-card">
+          <div class="activity-number">06</div>
+          <h3>Recipe Page</h3>
+          <p>Content layout and styling</p>
+        </a>
+
+        <a href="index7.html" class="activity-card">
+          <div class="activity-number">07</div>
+          <h3>CSS Shapes</h3>
+          <p>Geometric design with CSS</p>
+        </a>
+
+        <a href="index8.html" class="activity-card">
+          <div class="activity-number">08</div>
+          <h3>Profile Card</h3>
+          <p>Card component design</p>
+        </a>
+
+        <a href="index9.html" class="activity-card">
+          <div class="activity-number">09</div>
+          <h3>Gallery Layout</h3>
+          <p>Grid-based image gallery</p>
+        </a>
+
+        <a href="index10.html" class="activity-card">
+          <div class="activity-number">10</div>
+          <h3>Grid Design</h3>
+          <p>Advanced CSS Grid layouts</p>
+        </a>
+
+        <a href="index11.html" class="activity-card">
+          <div class="activity-number">11</div>
+          <h3>Ferris Wheel</h3>
+          <p>CSS animations and transforms</p>
+        </a>
+
+        <a href="index12.html" class="activity-card">
+          <div class="activity-number">12</div>
+          <h3>Moon Orbit</h3>
+          <p>Complex animation sequences</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-description">Have a project in mind? Let's discuss how I can help</p>
+      </div>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Connect With Me</h3>
+          <p>I'm always interested in hearing about new projects, collaboration opportunities, or just a friendly chat about technology.</p>
+          
+          <div class="social-links">
+            <a href="https://github.com/PHATWalrus" target="_blank" class="social-link">
+              <div class="social-icon github">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="social-info">
+                <h4>GitHub</h4>
+                <p>@PHATWalrus</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/harshit-sinha2005/" target="_blank" class="social-link">
+              <div class="social-icon linkedin">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+              <div class="social-info">
+                <h4>LinkedIn</h4>
+                <p>harshit-sinha2005</p>
+              </div>
+            </a>
+
+            <a href="mailto:harshit.25bcs10466@sst.scaler.com" class="social-link">
+              <div class="social-icon email">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="social-info">
+                <h4>Email</h4>
+                <p>Send me a message</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h3>Harshit Sinha</h3>
+          <p>Full Stack Developer & Android Expert</p>
+          <p class="footer-tagline">Building innovative solutions, one commit at a time.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <a href="https://github.com/PHATWalrus" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/harshit-sinha2005/" target="_blank">LinkedIn</a>
+            <a href="#freelance">Freelance</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Harshit Sinha. All rights reserved.</p>
+        <p>Made with ❤️ and lots of ☕</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
