@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --bg-hover: #252536;
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            max-width: 500px;
+            width: 90%;
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg), 0 0 40px var(--accent-glow);
+        }
+
+        .card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 20px;
+            flex-shrink: 0;
+            box-shadow: var(--shadow-md);
+            border: 3px solid var(--accent-primary);
+        }
+
+        .card-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card-info h2 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        .card-info p {
+            margin: 10px 0 20px 0;
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .card-info .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card-info .buttons a {
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-info .buttons a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 20px var(--accent-glow);
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+                width: 70vw;
+                text-align: center;
+            }
+
+            .card img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin: 20px;
+                flex-shrink: 0;
+                box-shadow: var(--shadow-md);
+                border: 3px solid var(--accent-primary);
+            }
+
+            .card-info {
+                padding: 10px 15px;
+            }
+
+            .card-info .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .card-info .buttons a {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <div class="card">
+        <img src="photograph.jpg" alt="Profile Image">
+        <div class="card-info">
+            <h2>Harshit Sinha</h2>
+            <p>Front-end Developer passionate about creating beautiful and functional web interfaces.</p>
+            <div class="buttons">
+                <a href="#">Contact</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

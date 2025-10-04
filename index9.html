@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        .back-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 24px;
+            background: var(--accent-gradient);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.15em;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .main {
+            margin: auto;
+            display: grid;
+            gap: 15px;
+            width: 47%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        h1 {
+            text-align: center;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+    </style>
+</head>
+<body>
+    <a href="portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+<h1>List of dogs available in my bag</h1>
+    <div class="main">
+    <div class="dog"><img id="dog1" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog2" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog3" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog4" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog5" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog6" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog7" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog8" src="" alt="Random dog"></div>
+    <div class="dog"><img id="dog9" src="" alt="Random dog"></div>
+    
+</div>
+
+<script>
+    // Fetch random dog images from Dog CEO API
+    async function loadDogImage(elementId) {
+        try {
+            const response = await fetch('https://dog.ceo/api/breeds/image/random');
+            const data = await response.json();
+            if (data.status === 'success') {
+                document.getElementById(elementId).src = data.message;
+            }
+        } catch (error) {
+            console.error('Error fetching dog image:', error);
+        }
+    }
+
+    // Load all 9 dog images
+    window.addEventListener('DOMContentLoaded', () => {
+        for (let i = 1; i <= 9; i++) {
+            loadDogImage(`dog${i}`);
+        }
+    });
+</script>
+</body>
+</html>

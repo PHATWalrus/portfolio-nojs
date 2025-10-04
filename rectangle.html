@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle Shape</title>
+  <style>
+    :root {
+      --bg-primary: #0a0a0f;
+      --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+      --accent-glow: rgba(99, 102, 241, 0.3);
+      --text-primary: #e4e4e7;
+      --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--bg-primary);
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow: hidden;
+    }
+
+    .rectangle {
+      width: 300px;
+      height: 150px;
+      background: var(--accent-gradient);
+      border-radius: 16px;
+      box-shadow: 0 0 40px var(--accent-glow);
+      transition: all 0.4s ease;
+    }
+
+    .rectangle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 60px var(--accent-glow);
+    }
+
+    h1 {
+      position: absolute;
+      top: 40px;
+      font-size: 2rem;
+      color: var(--text-primary);
+      text-shadow: 0 0 40px var(--accent-glow);
+    }
+
+    a {
+      position: absolute;
+      bottom: 40px;
+      text-decoration: none;
+      background: var(--accent-gradient);
+      color: white;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 30px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .rectangle {
+        width: 220px;
+        height: 110px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        top: 30px;
+      }
+
+      a {
+        bottom: 30px;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .rectangle {
+        width: 180px;
+        height: 90px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      a {
+        font-size: 0.85rem;
+        bottom: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🟩 Rectangle Shape</h1>
+  <div class="rectangle"></div>
+  <a href="index7.html">⬅ Back to Gallery</a>
+</body>
+</html>

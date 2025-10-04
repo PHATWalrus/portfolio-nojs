@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-form h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form input[type="tel"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            font-size: 14px;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 20px var(--accent-glow);
+            outline: none;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background: var(--accent-gradient);
+            border: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <form class="contact-form">
+        <h1>Contact Us</h1>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <div class="checkbox-container">
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe to Newsletter</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            text-align: center;
+            min-height: 100vh;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 {
+            color: var(--text-primary);
+            margin-top: 50px;
+            font-size: 2.5rem;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        h2 {
+            color: var(--text-primary);
+            margin-top: 40px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px auto;
+            width: 60%;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        img {
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border-light);
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg), 0 0 40px var(--accent-glow);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: var(--shadow-md);
+        }
+
+        a:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .back-btn {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>Hello, I am learning web development. I enjoy coding and exploring new technologies.</p>
+    <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="image" width="300px" height="300px">
+    <h2>My Favourite Website</h2>
+    <a href="https://github.com/PRATIK-BOTHRA">Visit Example Website</a>
+    
+    <!-- Back Button -->
+    <br>
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-btn {
+        display: block;
+        margin: 30px auto;
+        padding: 8px 18px;
+        background: #3498db;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.15em;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+        transition: background 0.2s;
+        text-align: center;
+        width: fit-content;
+        }
+        .back-btn:hover {
+        background: #217dbb;
+        }
+        .main{
+            margin: auto;
+            display: grid;;   
+            gap: 10px;
+            width: 47%;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8mm;
+        }
+       h1{
+        text-align: center;
+       }
+       
+    </style>
+</head>
+<body>
+    <a href="portfolio.html" class="back-btn">⬅ Back to Portfolio</a>
+<h1>List of dogs available in my bag</h1>
+    <div class="main">
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    <div class="dog"><img src="https://dog.ceo/api/img/random"></div>
+    
+</div>
+</body>
+</html>

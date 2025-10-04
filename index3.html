@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Plans</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --bg-hover: #252536;
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        h2 {
+            color: var(--text-primary);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+
+        ul li ol {
+            margin-top: 5px;
+        }
+
+        .category {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+            background: var(--bg-hover);
+            border-color: var(--accent-primary);
+        }
+
+        .top-priorities {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .top-priorities h2 {
+            color: white;
+        }
+
+        .top-priorities li {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <div class="container">
+        <h1>My Weekend Plans</h1>
+
+        <ul>
+            <li class="category">
+                <h2>Outdoor Activities</h2>
+                <ol>
+                    <li>Go for a morning hike</li>
+                    <li>Visit the park</li>
+                    <li>Ride a bicycle around town</li>
+                </ol>
+            </li>
+            <li class="category">
+                <h2>Movies to Watch</h2>
+                <ol>
+                    <li>The Grand Adventure</li>
+                    <li>Mystery of the Night</li>
+                    <li>Comedy Classics</li>
+                </ol>
+            </li>
+            <li class="category">
+                <h2>Foods to Try</h2>
+                <ol>
+                    <li>Homemade pizza</li>
+                    <li>Sushi rolls</li>
+                    <li>Chocolate cake</li>
+                </ol>
+            </li>
+        </ul>
+
+        <div class="top-priorities">
+            <h2>Top Priorities</h2>
+            <ol>
+                <li>Go for a morning hike</li>
+                <li>Watch The Grand Adventure</li>
+                <li>Try homemade pizza</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

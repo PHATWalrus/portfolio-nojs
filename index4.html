@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Collection</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --bg-hover: #252536;
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--text-primary);
+            margin-bottom: 30px;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-lg);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 0;
+            color: var(--text-primary);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid var(--border-light);
+        }
+
+        th {
+            background: var(--accent-gradient);
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background: var(--bg-hover);
+        }
+
+        tr:hover {
+            background: var(--bg-hover);
+            box-shadow: 0 0 20px var(--accent-glow);
+            transition: 0.3s;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+            thead tr {
+                display: none;
+            }
+            tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid #ddd;
+            }
+            td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: 45%;
+                padding-left: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <div class="container">
+        <h1>My Movie Collection</h1>
+        <table>
+            <caption>Favorite Movies</caption>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Year</th>
+                    <th>Directed By</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Title">Inception</td>
+                    <td data-label="Genre">Sci-Fi</td>
+                    <td data-label="Year">2010</td>
+                    <td data-label="Directed By">Christopher Nolan</td>
+                </tr>
+                <tr>
+                    <td data-label="Title">The Godfather</td>
+                    <td data-label="Genre">Crime</td>
+                    <td data-label="Year">1972</td>
+                    <td data-label="Directed By">Francis Ford Coppola</td>
+                </tr>
+                <tr>
+                    <td data-label="Title">The Dark Knight</td>
+                    <td data-label="Genre">Action</td>
+                    <td data-label="Year">2008</td>
+                    <td data-label="Directed By">Christopher Nolan</td>
+                </tr>
+                <tr>
+                    <td data-label="Title">Forrest Gump</td>
+                    <td data-label="Genre">Drama</td>
+                    <td data-label="Year">1994</td>
+                    <td data-label="Directed By">Robert Zemeckis</td>
+                </tr>
+                <tr>
+                    <td data-label="Title">Interstellar</td>
+                    <td data-label="Genre">Sci-Fi</td>
+                    <td data-label="Year">2014</td>
+                    <td data-label="Directed By">Christopher Nolan</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

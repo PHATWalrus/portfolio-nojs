@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+    :root {
+        --bg-primary: #0a0a0f;
+        --bg-card: #1e1e2e;
+        --bg-hover: #252536;
+        --accent-primary: #6366f1;
+        --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        --accent-glow: rgba(99, 102, 241, 0.3);
+        --text-primary: #e4e4e7;
+        --text-secondary: #a1a1aa;
+        --border-light: #3f3f46;
+        --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+        --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.6;
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+        background: var(--accent-gradient);
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: var(--shadow-md);
+    }
+
+    nav {
+        background: var(--bg-card);
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0.5rem 1rem;
+    }
+
+    nav ul li a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: var(--accent-primary);
+    }
+
+    .back-btn {
+        display: inline-block;
+        text-decoration: none;
+        background: var(--accent-gradient);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        margin: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: var(--shadow-md);
+    }
+
+    .back-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+    }
+
+    .main-content {
+        max-width: 900px;
+        margin: 0 auto 2rem auto;
+        padding: 1rem;
+        background: var(--bg-card);
+        border: 1px solid var(--border-light);
+        border-radius: 12px;
+        box-shadow: var(--shadow-lg);
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        color: var(--accent-primary);
+        text-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    p {
+        color: var(--text-secondary);
+    }
+
+    span {
+        font-weight: bold;
+        color: var(--accent-primary);
+    }
+
+    footer {
+        background: var(--bg-card);
+        border-top: 1px solid var(--border-light);
+        color: var(--text-secondary);
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+        }
+        nav ul li {
+            margin: 0.5rem 0;
+        }
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Harshit</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Back Button -->
+<a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+<div class="main-content">
+    <section>
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! I am a <span>developer</span> passionate about creating clean and responsive web designs that enhance user experience.</p>
+        </article>
+    </section>
+</div>
+
+<footer>
+    Pratik &copy; 2025-09-29
+</footer>
+</body>
+</html>

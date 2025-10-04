@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipe</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-card: #1e1e2e;
+            --bg-hover: #252536;
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --border-light: #3f3f46;
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        header h1 {
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 0 0 40px var(--accent-glow);
+        }
+
+        img {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg), 0 0 40px var(--accent-glow);
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent-primary);
+            padding-bottom: 5px;
+            color: var(--accent-primary);
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        #ingredients li {
+            color: var(--accent-secondary);
+        }
+
+        #instructions li {
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-light);
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 20px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--accent-gradient);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 20px auto;
+            display: block;
+            width: max-content;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow-md);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--accent-glow);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            section {
+                padding: 0 10px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <a href="index.html" class="back-btn">⬅ Back to Portfolio</a>
+
+    <header>
+        <h1>Grandma's Chocolate Cake</h1>
+    </header>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPhRJgt5tGRbL9uNUOixTuwJ3VmTxgtsVQeg&s" alt="Delicious chocolate cake">
+
+    <section id="ingredients">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 cups all-purpose flour</li>
+            <li>1 cup sugar</li>
+            <li>1/2 cup cocoa powder</li>
+            <li>1 tsp baking soda</li>
+            <li>1/2 tsp salt</li>
+            <li>1 cup milk</li>
+            <li>1/2 cup vegetable oil</li>
+            <li>2 large eggs</li>
+            <li>1 tsp vanilla extract</li>
+        </ul>
+    </section>
+
+    <section id="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat the oven to 350°F (175°C).</li>
+            <li>In a large bowl, mix flour, sugar, cocoa, baking soda, and salt.</li>
+            <li>Add milk, oil, eggs, and vanilla. Beat until smooth.</li>
+            <li>Pour batter into a greased baking pan.</li>
+            <li>Bake for 30-35 minutes or until a toothpick comes out clean.</li>
+            <li>Let the cake cool before serving. Enjoy!</li>
+        </ol>
+    </section>
+
+    <footer>
+        Happy Baking! Share this cake with your loved ones.
+    </footer>
+</body>
+</html>
