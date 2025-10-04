@@ -45,18 +45,13 @@
           </div>
           <h1>Harshit Sinha</h1>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
         <ul class="nav-menu">
-          <li><a href="#about" onclick="closeMenu()">About</a></li>
-          <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
-          <li><a href="#freelance" onclick="closeMenu()">Freelance</a></li>
-          <li><a href="#activities" onclick="closeMenu()">Activities</a></li>
-          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li><a href="#about" >About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#freelance">Freelance</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -844,27 +839,6 @@
     </div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const navMenu = document.querySelector('.nav-menu');
-      navMenu.classList.toggle('active');
-    }
-
-    function closeMenu() {
-      const navMenu = document.querySelector('.nav-menu');
-      navMenu.classList.remove('active');
-    }
-
-    document.addEventListener('click', function(event) {
-      const navMenu = document.querySelector('.nav-menu');
-      const hamburger = document.querySelector('.hamburger');
-      const navContainer = document.querySelector('.nav-container');
-      
-      if (!navContainer.contains(event.target) && navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
-      }
-    });
-  </script>
 
 </body>
 </html>

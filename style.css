@@ -438,11 +438,13 @@ nav {
   list-style: none;
   gap: 2.5rem;
   margin: 0;
+  margin-left: 3rem;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
+  margin-left: 3rem;
 }
 
 .hamburger div {
@@ -513,6 +515,7 @@ nav a:hover::after {
 @media (max-width: 768px) {
   .nav-container {
     padding: 1rem;
+    position: relative;
   }
 
   .nav-brand h1 {
@@ -541,6 +544,7 @@ nav a:hover::after {
     gap: 0;
     box-shadow: var(--shadow-lg);
     border-top: 1px solid var(--border-color);
+    margin-left: 0;
   }
 
   .nav-menu.active {
@@ -571,7 +575,7 @@ nav a:hover::after {
     display: block;
     z-index: 101;
     margin-left: auto;
-    padding-left: 5rem;
+    position: relative;
   }
 
   .hamburger:hover div {
